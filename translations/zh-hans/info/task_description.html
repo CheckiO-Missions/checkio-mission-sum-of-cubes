@@ -1,0 +1,47 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    正整数可以分解成不同的正整数立方体之和，有时有多种不同的方式。您的函数应查找并返回其总和等于给定正整数的不同立方数组{% if is_js %}的降序数组{% else %}列表{% endif %} <b>n</b> 。如果无法将<b>n</b> 表示为不同立方体之和，则返回 <b>{% if is_js %}null{% else %}None{% endif %}</b>.
+</p>
+<p>
+    如果<b>n</b> 允许分解为多个不同的立方体之和，则函数必须返回从最大可能的第一个数字开始的词序最高解，然后返回其余数字的词序最高表示<b>n-a*a*a</b> 。例如，在调用<b>n = 1729</b> 时，该函数应返回<b>[12, 1]</b> ，而不是<b>[10, 9]</b> 。  
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>正整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong> {% if is_js %}数组{% else %}列表{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span>的整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>或 <span>{% if is_js %}null{% else %}None{% endif %}</span>. 
+</p>
+
+
+<p>
+    <strong>例子：</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件</strong>
+    <ul>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+
+<p><i>该任务摘自<span>Python CCPS 109</span> 。它由<span>Ryerson Chang School of Continuing Education</span> 教授。<a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
