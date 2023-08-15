@@ -1,0 +1,47 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Натуральні числа можна розбити на суми окремих кубів натуральних чисел, іноді декількома різними способами. Ваша функція повинна знайти і повернути спадаючий {% if is_js %}масив{% else %}список{% endif %} окремих кубів, сума яких дорівнює заданому натуральному числу <b>n</b>. Якщо неможливо виразити <b>n</b> у вигляді суми різних кубів, виведіть <b>{% if is_js %}null{% else %}None{% endif %}</b>.
+</p>
+<p>
+    Якщо <b>n</b> допускає декілька розбиттів на суми окремих кубів, функція повинна повернути лексикографічно найвищий розв'язок, який починається з найбільшого можливого першого числа, за яким слідує лексикографічно найвище представлення решти чисел <b>n-a*a*a</b>. Наприклад, при виклику з <b>n = 1729</b> ця функція повинна повернути <b>[12, 1]</b> замість <b>[10, 9]</b>. 
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Натуральне число <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> {% if is_js %}Масив{% else %}Список{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> цілих чисел <span>({% if is_js %}number{% else %}int{% endif %})</span> або <span>{% if is_js %}null{% else %}None{% endif %}</span>. 
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Умова:</strong>
+    <ul>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+
+<p><i>Задачу взято з сайту <span>Python CCPS 109</span>. Її розв'язано для <span>Ryerson Chang School of Continuing Education</span> за допомогою <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
