@@ -1,0 +1,47 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Les entiers positifs peuvent être décomposés en sommes de cubes distincts d'entiers positifs, parfois de plusieurs manières différentes. Votre fonction doit trouver et renvoyer le tableau descendant {% if is_js %}{% else %} liste{% endif %} de cubes distincts dont la somme est égale à l'entier positif donné <b>n</b>. S'il est impossible d'exprimer <b>n</b> sous la forme d'une somme de cubes distincts, renvoyez <b>{% if is_js %}null{% else %}None{% endif %}</b>.
+</p>
+<p>
+    Si <b>n</b> permet plusieurs décompositions en sommes de cubes distincts, la fonction doit renvoyer la solution lexicographiquement la plus élevée qui commence par le premier nombre le plus grand possible, suivi de la représentation lexicographiquement la plus élevée du reste du nombre <b>n-a*a*a</b>. Par exemple, appelée avec <b>n = 1729</b>, cette fonction doit renvoyer <b>[12, 1]</b> au lieu de <b>[10, 9]</b>. 
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Entier positif <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> {% if is_js %}Tableau{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> d'entiers <span>({% if is_js %}number{% else %}int{% endif %})</span> ou <span>{% if is_js %}null{% else %}None{% endif %}</span>. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Condition préalable:</strong>
+    <ul>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+
+<p><i>La mission est tirée de <span>Python CCPS 109</span>. Elle est enseignée pour <span>Ryerson Chang School of Continuing Education</span> par <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
