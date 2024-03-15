@@ -1,0 +1,47 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Positive ganze Zahlen lassen sich in Summen von verschiedenen Würfeln positiver ganzer Zahlen zerlegen, manchmal auf verschiedene Arten. Ihre Funktion sollte die absteigende {% if is_js %}Array{% else %}Liste{% endif %} von eindeutigen Würfeln finden und zurückgeben, deren Summe gleich der gegebenen positiven ganzen Zahl <b>n</b> ist. Wenn es nicht möglich ist, <b>n</b> als eine Summe verschiedener Würfel auszudrücken, geben Sie zurück <b>{% if is_js %}null{% else %}None{% endif %}</b>.
+</p>
+<p>
+    Wenn <b>n</b> mehrere Aufteilungen in Summen eindeutiger Würfel zulässt, muss die Funktion die lexikografisch höchste Lösung zurückgeben, die mit der größtmöglichen ersten Zahl beginnt, gefolgt von der lexikografisch höchsten Darstellung des Rests der Zahl <b>n-a*a*a</b>. Wird diese Funktion zum Beispiel mit <b>n = 1729</b> aufgerufen, sollte sie <b>[12, 1]</b> statt <b>[10, 9]</b> zurückgeben.  
+</p>
+
+<!-- <p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p> -->
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Positive Ganzzahl <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> {% if is_js %}Array{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> von Ganzzahlen <span>({% if is_js %}number{% else %}int{% endif %})</span> oder <span>{% if is_js %}null{% else %}None{% endif %}</span>. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingung:</strong>
+    <ul>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+
+<p><i>Die Aufgabe wurde von <span>Python CCPS 109</span> übernommen. Sie wird für <span>Ryerson Chang School of Continuing Education</span> von <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
